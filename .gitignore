@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+*.log
+logs/
+*.tmp
+*.bak
+
+Environment variables
+
+.env
+.env.*
+*.env
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+docker-compose.override.yml
