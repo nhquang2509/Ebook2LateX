@@ -4,16 +4,11 @@ from sqlalchemy import Column, String, Integer, ForeignKey, DateTime, Boolean, T
 
 from sqlalchemy.dialects.postgresql import UUID, JSONB
 
-from sqlalchemy.ext.declarative import declarative_base
-
 from sqlalchemy.orm import relationship
 
 from sqlalchemy.sql import func
 
-
-# Khởi tạo lớp Base để các Model kế thừa
-
-Base = declarative_base()
+from app.database import Base
 
 
 class User(Base):
