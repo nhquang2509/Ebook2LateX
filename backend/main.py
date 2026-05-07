@@ -15,3 +15,8 @@ app = FastAPI()
 def read_root():
 
     return {"message": "Chao mung ban den voi Ebook2LateX!"}
+
+@app.get("/nhanvoi10")
+def multiply_by_10(value: float):
+
+    return {"result": value * 10}
